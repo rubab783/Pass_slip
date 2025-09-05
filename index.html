@@ -24,7 +24,7 @@
       font-weight: bold;
       font-size: 18px;
       margin: 15px 0;
-      text-decoration: underline;
+    
     }
     .row {
       margin: 10px 0;
@@ -36,7 +36,7 @@
     }
     .line {
       display: inline-block;
-      border-bottom: 1px solid #000;
+      border-bottom: 2px solid #000;
       width: 400px;
       height: 18px;
     }
@@ -48,63 +48,82 @@
     }
     .footer {
       margin-top: 30px;
-      border-top: 1px dashed #000;
+      border-top: 2px dashed #000;
       padding-top: 10px;
       font-size: 14px;
+    }
+    table,tr{
+      border: 2px solid black;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="">
     <!-- Header -->
+     <table border="1" cellspacing="0" align="center" width="742">
+      <tr>
     <div class="header">
-      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png" width="180" align="left"/>
-      <div><strong>Republic of the Philippines</strong></div>
-      <div>Bangsamoro Autonomous Region in Muslim Mindanao</div>
-      <div>Ministry of Trade, Investment and Tourism</div>
-      <div>BARMM Compound, Cotabato City, 9600 </div>
-      <div>Tel:(+64) 557-2819</div>
+    <td>  <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png" width="180" style="padding:1px;"/></td>
+   <td><div style="margin:0px;">   <center><strong>Republic of the Philippines</center></div>
+      <div><center><span>Bangsamoro Autonomous Region in Muslim Mindanao</span></center></div>
+      <div><span><center>Ministry of Trade, Investment and Tourism</center></span></div>
+      <div><span><center>BARMM Compound, Cotabato City, 9600 </center></span></div>
+      <div><span><center>Tel:(+64) 557-2819</centr></span></strong></div>
+      
     </div>
-
+    </td>
+    </tr>
+<tr>
     <!-- Title -->
-    <div class="title">PASS SLIP</div>
+    
+    <td colspan="2"> <div class="title">PASS SLIP</div></td>
+    </tr>
 
-    <!-- Form Fields -->
-    <div class="row" style="text-align: right;"><span class="label">Date:</span> <span class="line"></span></div>
-    <div class="row"><span class="label">Name:</span> <span class="line"></span></div>
-    <div class="row"><span class="label">Position:</span> <span class="line"></span></div>
-    <div class="row"><span class="label">Division/Section:</span> <span class="line"></span></div>
+</table>
+<div class="container">   <!-- Form Fields -->
+    <div class="row" style="text-align: right;"><span style="width:190px"class="line"> <b>September 5, 2025</b></span><br/><span style="text-align: center;"class="label">Date</span> <br/></div>
+    <div class="row"><span class="label">Name:</span> <span class="line"><b> Juan Dela Cruz</b></span></div>
+    <div class="row"><span class="label">Position:</span> <span class="line"> <b>Administrative Officer II</b></span></div>
+    <div class="row"><span class="label">Division/Section:</span> <span class="line"> <b>Finance Division </b></span></div>
 
     <div class="section">
-      Permission is requested to leave the office premises during office hours<br/> <br/>
-      From (Departure): <span  style="padding-left: 240px;">To (Arrival):</span><br/><span class="line" style="width:200px;"></span>
-       <span class="line" style="width:200px;margin-left: 165px;"></span>
+     <b> <p>Permission is requested to leave the office premises during office hours</p> 
+      <span>From (Departure): </span> 
+       <span  style="padding-left: 380px;">To (Arrival):</span> <br/>
+       <div class="line" style="float:left;width:210px;margin: 0px;text-align: center;"><span>10:30 AM </span></div>
+       <div class="line" style="width:200px;float:right;margin-right: 0px;text-align: center;"><span>2:00 PM</span></div><br/>
+       </b>
     </div>
 
     <div class="section">
+      <b>
       <span class="label">Purpose:</span> 
-      □ Official 
-      <span class="checkbox">□ Personal</span>
+      ☑ Official 
+      <span class="checkbox">☐ Personal</span>
+      </b>
     </div>
 
     <div class="section">
       <span class="label">Reason:</span><br>
-      <div class="line" style="width:100%;"></div><br>
-      <div class="line" style="width:100%;"></div><br>
-      <div class="line" style="width:100%;"></div>
+      <div class="line" style="margin-left: 46%;"> <b>Meeting with regional office</b></div><br><br>
+      <div class="line" style="margin-left: 46%;"> <b> Submission of reports </b></div><br><br>
+      <div class="line" style="margin-left: 46%;"><b> Coordination with agencies </b></div>
     </div>
 
     <div class="section">
       <span class="label">Approved:</span><br><br>
-      <div style="text-align:center;">__________________________<br>Section Head / Chief / Director</div>
+      <div style="text-align:center;"><b>__________________________<br>Engr. Maria Santos<br>Section Head / Chief / Director</b></div>
     </div>
 
     <!-- Footer for Guard -->
+     <b>
     <div class="footer">
-      <div>To be filled up by the Guard on Duty</div>
-      <div class="row"><span class="label">Actual Departure Time:</span> <span class="line" style="width:200px;"></span></div>
-      <div class="row"><span class="label">Actual Arrival Time:</span> <span class="line" style="width:200px;"></span></div>
+      <div>To be filled up by the Guard on Duty</div></b>
+      <div class="row"><span class="label">Actual Departure Time:</span> <span class="line" style="width:200px;"> <b>10:35 AM</b></span></div>
+      <div class="row"><span class="label">Actual Arrival Time:</span> <span class="line" style="width:200px;"><b> 1:55 PM</b></span></div>
     </div>
   </div>
+  </div>
+ 
 </body>
 </html>
