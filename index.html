@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pass Slip</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      border: 2px solid #000;
+      padding: 20px;
+      width: 700px;
+      margin: auto;
+    }
+    .header {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 15px 0;
+      text-decoration: underline;
+    }
+    .row {
+      margin: 10px 0;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 160px;
+    }
+    .line {
+      display: inline-block;
+      border-bottom: 1px solid #000;
+      width: 400px;
+      height: 18px;
+    }
+    .checkbox {
+      margin-left: 20px;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .footer {
+      margin-top: 30px;
+      border-top: 1px dashed #000;
+      padding-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png" width="180" align="left"/>
+      <div><strong>Republic of the Philippines</strong></div>
+      <div>Bangsamoro Autonomous Region in Muslim Mindanao</div>
+      <div>Ministry of Trade, Investment and Tourism</div>
+      <div>BARMM Compound, Cotabato City, 9600 </div>
+      <div>Tel:(+64) 557-2819</div>
+    </div>
+
+    <!-- Title -->
+    <div class="title">PASS SLIP</div>
+
+    <!-- Form Fields -->
+    <div class="row" style="text-align: right;"><span class="label">Date:</span> <span class="line"></span></div>
+    <div class="row"><span class="label">Name:</span> <span class="line"></span></div>
+    <div class="row"><span class="label">Position:</span> <span class="line"></span></div>
+    <div class="row"><span class="label">Division/Section:</span> <span class="line"></span></div>
+
+    <div class="section">
+      Permission is requested to leave the office premises during office hours<br/> <br/>
+      From (Departure): <span  style="padding-left: 240px;">To (Arrival):</span><br/><span class="line" style="width:200px;"></span>
+       <span class="line" style="width:200px;margin-left: 165px;"></span>
+    </div>
+
+    <div class="section">
+      <span class="label">Purpose:</span> 
+      □ Official 
+      <span class="checkbox">□ Personal</span>
+    </div>
+
+    <div class="section">
+      <span class="label">Reason:</span><br>
+      <div class="line" style="width:100%;"></div><br>
+      <div class="line" style="width:100%;"></div><br>
+      <div class="line" style="width:100%;"></div>
+    </div>
+
+    <div class="section">
+      <span class="label">Approved:</span><br><br>
+      <div style="text-align:center;">__________________________<br>Section Head / Chief / Director</div>
+    </div>
+
+    <!-- Footer for Guard -->
+    <div class="footer">
+      <div>To be filled up by the Guard on Duty</div>
+      <div class="row"><span class="label">Actual Departure Time:</span> <span class="line" style="width:200px;"></span></div>
+      <div class="row"><span class="label">Actual Arrival Time:</span> <span class="line" style="width:200px;"></span></div>
+    </div>
+  </div>
+</body>
+</html>
