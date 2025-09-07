@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +12,12 @@
     .header p{
       line-height: 10px;
     }
-    .container {
+       .container {
       border: 2px solid #000;
       padding: 20px;
-      width: 900px;
+      max-width: 1000px;
       margin: auto;
+      box-sizing: border-box;
     }
     .header {
       text-align: center;
@@ -61,6 +63,18 @@
     .certified {
       text-align: right;
       margin-top: 40px;
+    }
+    @media print {
+      body {
+        margin: 0;
+      }
+      .container {
+        border: none;
+        padding: 0;
+      }
+      table.record {
+        font-size: 11px;
+      }
     }
   </style>
 </head>
@@ -114,12 +128,12 @@
   <tr>
     <th width="100">FROM</th>
     <th width="100">TO</th>  
-    <th width="150">Designation</th>  
+    <th width="120">Designation</th>  
     <th>Status<br/>(1)</th>  
     <th>Salary<br/>(2)</th>
-    <th>Date</th>  
+    <th width="100">Date</th>  
     <th>Cause</th>  
-    <th>Amount <br/> Recieved</th>  
+    <th width="130">Amount <br/> Recieved</th>  
   </tr>
   <tr cellpadding="40">
     <td  rowspan='10'>
@@ -357,10 +371,7 @@
    
        
     </td>
-    <td rowspan="10">
-      none<br/>
-      none<br/>
-      none<br/>
+    <td >
       none<br/>
       none<br/>
       none<br/>
@@ -399,24 +410,35 @@
       none<br/>
       
     </td>
-    <td rowspan="10">
+        <td rowspan="">
       (1) <br/> <br/>
       (2)<br/>
       (3)<br/>
-      Per NBC NO .511 <br/>
+ <div style="width:10%;height: 20px;background-color:white;position: absolute;">Per NBC NO.511</div><br/>
       (4)<br/>
-      Per NBC NO .516 <br/>
-      Per NBC NO .521 <br/> <br/>
-      (6)<br/>
-       (7)<br/>
-       NBC 575/02-22-19 
+      
+      <div style="width:12%;height: 20px;background-color:white;position: absolute;">Per NBC NO.516 </div><br/>
+      <div style="width:12%;height: 20px;background-color:white;position: absolute;">Per NBC NO.521 </div><br/>
+      (5) <br/> <br/>
+      <div style="width:9%;height: 20px;background-color:white;position: absolute;">Per NBC 540 </div><br/>
+      <strong>(6)</strong><br/> <br/>
+      <strong>(7)</strong><br/><br/><br/>
+      <div style="width:20%;height:30px;background-color:white;position: absolute;right:10%;"> NBC 575/02-22-19  Bol Ratified </div> <br/><br/><br/>
+      <div style="width:16%;height:30px;background-color:white;position: absolute;right:10%"> (8)  /01-01-2020 Separated </div><br/><br/> <br/>
+      <div style="width:16%;height:80px;background-color:white;position: absolute;right:10%;margin-top: 10PX;"> &nbsp; &nbsp; &nbsp; Reemployed <br/> 02-09-21 -Appnt disapproval 
+        <br/> "De Facto Officer "
+        <br/>&nbsp; &nbsp; &nbsp;&nbsp; Reemployed
+      </div> <br/><br/><br/><br/>
+ <div style="width:20%;height:40px;background-color:white;position: absolute;right:10%;margin-top:4%;">EO NO 64 S 2024 (FIRST TRANCE ) <br/>
+   <center>Step Increment</center>  </div><br/><br/> 
+<div style="width:22%;height:20px;background-color:white;position: absolute;right:10%;margin-top: 5%;"><strong> EO NO 64 S 2024(SECOND TRANCHE) </strong>
+</div>
+ 
 
     </td>
-    <td rowspan="10">Bol Ratified <br/>
-      Seprated
-
     </td>
-    <td rowspan="10"></td>
+   <td>4</td>
+    <td></td>
  
 
   </tr>
@@ -452,12 +474,12 @@
 
   </tr>
   </table>
-<p>Issued in Compilance with Executive oRder  no 54 dated August 10 1954 and in accordance with circular No 58 dated august 10 <br/> 1954 of the system</p>
-  <span style="margin-left:650PX;">Certified Correct</span><br/>
+<p>Issued in Compilance with Executive oRder  no 54 dated August 10, 1954 and in accordance with circular No 58 dated august 10 <br/> 1954 of the system</p>
+  <span style="margin-left:60%;">Certified Correct : </span><br/>
  <div style="float: left;">___________________________  <br/> <br> 
  <span style="padding-left: 30px;">Date</span></div>
 
- <div style="float: right;margin-right: 100px;">___________________________ <br/><br/> <span style="padding-left: 50px;">Administrator Office</span></div>
+ <div style="width:24%;float: right;">___________________________ <br/><br/> <span>Administrator Office V (HRMO III)</span></div>
 
 
 </body>
