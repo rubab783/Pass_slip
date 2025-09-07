@@ -9,40 +9,28 @@
       font-family: Arial, sans-serif;
       margin: 20px;
     }
-    .header p{
-      line-height: 10px;
-    }
-       .container {
+    .container {
       border: 2px solid #000;
       padding: 20px;
-      max-width: 1000px;
+      max-width: 1220px;
       margin: auto;
       box-sizing: border-box;
     }
     .header {
       text-align: center;
-      line-height: 1.4;
+      line-height: 0.5;
       font-size: 16px;
     }
-    .title {
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-      margin: 15px 0;
-      text-decoration: underline;
-    }
-    .row {
-      margin: 8px 0;
-    }
-    .label {
-      display: inline-block;
-      width: 200px;
-      font-weight: bold;
+    .data{
+      width:1220px;
+      height:850px;
+      background-color:white;
+      margin:0px auto ;
     }
     .line {
       display: inline-block;
       border-bottom: 1px solid #000;
-      width: 1120px;
+      width: 100%;
       height: 18px;
     }
     table.record {
@@ -55,68 +43,59 @@
       border: 1px solid #000;
       padding: 6px;
       text-align: center;
-    }
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-    }
-    .certified {
-      text-align: right;
-      margin-top: 40px;
-    }
-    @media print {
-      body {
-        margin: 0;
-      }
-      .container {
-        border: none;
-        padding: 0;
-      }
-      table.record {
-        font-size: 11px;
-      }
+      vertical-align: top;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-<p><strong>Republic of Philippines</strong></p>
-<p><strong> Autonomus Region in Muslim Mindanao</strong> </p>
-<p><strong>MINISTRY OF TRADE , INVESTMENTS AND TOURISM</strong> </p>
-<P> <strong> Regional Office </strong></P>
-<P><strong> Cotabato City</strong></P>
-<h4>SERVICE RECORDS</h4>
-  </div>
-  <div class="details">
-  <strong>  <span>NAME &nbsp;&nbsp;&nbsp;  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> </strong>
-  <div class="line">
-    <span style="padding-left: 140PX;"> <strong>  CABUGAO </strong></span> 
-    <span style="padding-left: 120PX;"> <strong> JOSELITO </strong></span>
-    <span style="padding-left: 120PX;"><strong>S</strong> </span>
-  </div>
-  <span style="padding-left: 240PX;">(Surname)</span>
-  <span style="padding-left: 140PX;">(Firstname)</span>
-  <span style="padding-left: 100PX;">(M.I)</span>
-  <span style="padding-left: 70PX;">(If married women , give also full maiden name)</span>
-  <br/><br/><br/>
-  <strong>  <span>BIRTH &nbsp;&nbsp;&nbsp;  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> </strong>
-  <div class="line">
-      <span style="padding-left: 140PX;"> <strong>  September 13 , 1970 </strong></span> 
-    <span style="padding-left: 120PX;"> <strong> Cotabato City </strong></span>
-    <span style="padding-left: 120PX;"><strong>S</strong> </span>  
-  </div>
-    <span style="padding-left: 250PX;">(Date)</span>
-  <span style="padding-left: 220PX;">(Place)</span>
-  <span style="padding-left: 90PX;">(Date herein be checked from birth or baptismal certiface or some <br/> 
-    <span style="padding-left:660px;">other reliable documents)</span></span>
-  <br/><br/><br/>
- <p><strong>This is to certify that the employee named herein acyually rendered sevices in this office as shown by the service record below
-  <br/>
-  each line of which is supported by appointment and other papers actually issued by this office authority concerned.
-  </strong>
- </p> 
-  </div>
-  <table border="1" cellpadding="14" width="1220" cellspacing="0">
+  <!-- Container for header and details -->
+  <div class="container">
+    <div class="header">
+      <p><strong>Republic of Philippines</strong></p>
+      <p><strong>Autonomous Region in Muslim Mindanao</strong></p>
+      <p><strong>MINISTRY OF TRADE, INVESTMENTS AND TOURISM</strong></p>
+      <p><strong>Regional Office</strong></p>
+      <p><strong>Cotabato City</strong></p>
+      <h4>SERVICE RECORDS</h4>
+    </div>
+
+    <div class="details">
+      <strong>NAME&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+      <div class="line">
+        <span style="padding-left: 140px;"><strong>CABUGAO</strong></span>
+        <span style="padding-left: 120px;"><strong>JOSELITO</strong></span>
+        <span style="padding-left: 120px;"><strong>S</strong></span>
+      </div>
+      <span style="padding-left: 240px;">(Surname)</span>
+      <span style="padding-left: 140px;">(Firstname)</span>
+      <span style="padding-left: 100px;">(M.I)</span>
+      <span style="padding-left: 70px;">(If married women, give also full maiden name)</span>
+
+      <br/><br/><br/>
+
+      <strong>BIRTH&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+      <div class="line">
+        <span style="padding-left: 140px;"><strong>September 13, 1970</strong></span>
+        <span style="padding-left: 120px;"><strong>Cotabato City</strong></span>
+        <span style="padding-left: 120px;"><strong>S</strong></span>
+      </div>
+      <span style="padding-left: 250px;">(Date)</span>
+      <span style="padding-left: 220px;">(Place)</span>
+      <span style="padding-left: 90px;">(Date herein be checked from birth or baptismal certificate or some <br/>
+        <span style="padding-left:660px;">other reliable documents)</span>
+      </span>
+
+      <br/><br/><br/>
+      <p>
+        <strong>
+          This is to certify that the employee named herein actually rendered services in this office as shown by the service record below, <br/>
+          each line of which is supported by appointment and other papers actually issued by this office authority concerned.
+        </strong>
+      </p>
+    </div>
+    </div>
+  <div class="data">
+    <table border="1" cellpadding="14" width="1220" cellspacing="0">
   <tr>
     <th colspan="2">SERVICE <br/>(Inclusive Dates)</th>
     <th colspan="3">RECORD OF APPOINTMENT</th>
@@ -431,7 +410,7 @@
       </div> <br/><br/><br/><br/>
  <div style="width:20%;height:40px;background-color:white;position: absolute;right:10%;margin-top:4%;">EO NO 64 S 2024 (FIRST TRANCE ) <br/>
    <center>Step Increment</center>  </div><br/><br/> 
-<div style="width:22%;height:20px;background-color:white;position: absolute;right:10%;margin-top: 5%;"><strong> EO NO 64 S 2024(SECOND TRANCHE) </strong>
+<div style="width:20%;height:20px;background-color:white;position: absolute;right:10%;margin-top: 5%;font-size: 13px;"><strong> EO NO 64 S 2024(SECOND TRANCHE) </strong>
 </div>
  
 
@@ -474,13 +453,15 @@
 
   </tr>
   </table>
+  </div>
+<div style="width: 1220px;height:120px;background-color:white;margin: 0px auto;">
 <p>Issued in Compilance with Executive oRder  no 54 dated August 10, 1954 and in accordance with circular No 58 dated august 10 <br/> 1954 of the system</p>
   <span style="margin-left:60%;">Certified Correct : </span><br/>
  <div style="float: left;">___________________________  <br/> <br> 
  <span style="padding-left: 30px;">Date</span></div>
 
  <div style="width:24%;float: right;">___________________________ <br/><br/> <span>Administrator Office V (HRMO III)</span></div>
-
+</div>
 
 </body>
 </html>
