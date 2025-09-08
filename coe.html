@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .container {
+      width: 95%;
+      max-width:700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Header with logos left/right */
+    .header {
+      display: flex;
+      align-items:center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+      float: left;
+    }
+
+    .header .sub {
+        width:700px;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      line-height: 0.8;
+    }
+
+    .header .sub strong {
+      font-size: 15px;
+    }
+
+
+    .main p {
+      font-size: 15px;
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .particulars-table {
+      width: 80%;
+      margin: 20px 0px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .particulars-table th,
+    .particulars-table td {
+      padding: 6px 4px;
+    }
+
+    .particulars-table th {
+      text-align:left;
+    }
+
+    .particulars-table td {
+      text-align:left;
+    }
+
+    .total-row td {
+      border-top: 1px solid #000;
+      font-weight: bold;
+    }
+
+    .purpose, .done-line {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .signature {
+        width: 30%;
+        height: 90px;
+        float: right;
+      margin-top: 50px;
+      
+    }
+
+    .sig-name {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align:center;
+    }
+
+    /* Print settings */
+    @media print {
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: none;
+        padding: 10mm;
+      }
+      .header img {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png" align="left" alt="Logo Left"/>
+      <div class="sub">
+        <p>Republic Of the Philippines</p>
+        <p>Bangsamoro Autonomous Region in Muslim Mindanao</p>
+        <p><strong>MINISTRY OF TRADE, INVESTMENT AND TOURISM</strong></p>
+        <p>BARMM Compound, 9600 Cotabato City</p>
+        <p>Tel: (+64) 557-2819</p>
+      </div>
+      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png"  align="right"alt="Logo Right"/>
+    </div>
+
+    <div class="main">
+       <center> <p style="padding-left:34%;font-size:22px;" class="title"><strong>C E R T I F I C A T I O N</strong></p></center>
+      <p><strong>TO WHOM IT MAY CONCERN:</strong></p>
+      <p>
+        This is to certify that <strong>(FULL NAME)</strong>, is presently employed in this office as
+        <strong>(POSITION)</strong> from <strong>(Month/Date/Year)</strong> to present with an annual gross income of
+        <strong>(Amount)</strong> broken as follows:
+      </p>
+
+      <table class="particulars-table">
+        <tr><th>Particulars</th><th>Amount</th></tr>
+        <tr><td>Basic Salary per annum</td><td>P</td></tr>
+        <tr><td>PERA</td><td>P</td></tr>
+        <tr><td>13th month pay</td><td>P</td></tr>
+        <tr><td>14th month pay</td><td>P</td></tr>
+        <tr><td>Cash gift</td><td>P</td></tr>
+        <tr><td>Clothing allowance</td><td>P</td></tr>
+        <tr><td>Productivity Enhancement Incentive</td><td>P</td></tr>
+        <tr class="total-row"><td>Total gross income</td><td>P</td></tr>
+      </table>
+
+      <p class="purpose">
+        This certification is issued upon the request of <strong>(FAMILY NAME)</strong> for whatever purpose it may serve.
+      </p>
+
+      <p class="done-line">
+        Done this <strong>18th</strong> day of <strong>June 2025</strong> at MTIT – BARMM Regional Office, Cotabato City.
+      </p>
+
+      <div class="signature">
+        <p class="sig-name">BAINET A. NANDING</p>
+        <p>Admin. Officer V (HRMO III)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
