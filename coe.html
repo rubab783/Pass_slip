@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,32 +19,33 @@
       padding: 20px;
     }
 
-    /* Header with logos left/right */
+    /* Header using floats */
     .header {
-      display: flex;
-      align-items:center;
-      text-align: center;
+      width: 100%;
+      overflow: hidden; /* clear floats */
       margin-bottom: 30px;
+      text-align: center;
     }
 
     .header img {
       width: 100px;
       height: auto;
-      float: left;
     }
 
+
     .header .sub {
-        width:700px;
-      float: left;
+      margin: 0;
+      width:65%;
+      float:left;
+      display: inline-block;
       text-align: center;
       font-size: 16px;
-      line-height: 0.8;
+      line-height: 1.2;
     }
 
     .header .sub strong {
       font-size: 15px;
     }
-
 
     .main p {
       font-size: 15px;
@@ -83,17 +84,16 @@
     }
 
     .signature {
-        width: 30%;
-        height: 90px;
-        float: right;
+      width: 30%;
+      height: 90px;
+      float: right;
       margin-top: 50px;
-      
+      text-align: center;
     }
 
     .sig-name {
       font-weight: bold;
       margin-top: 20px;
-      text-align:center;
     }
 
     /* Print settings */
@@ -123,11 +123,11 @@
         <p>BARMM Compound, 9600 Cotabato City</p>
         <p>Tel: (+64) 557-2819</p>
       </div>
-      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png"  align="right"alt="Logo Right"/>
+      <img src="https://mylaundryapp.s3.ap-south-1.amazonaws.com/mtit_logo.png" align="left" alt="Logo Right"/>
     </div>
 
     <div class="main">
-       <center> <p style="padding-left:34%;font-size:22px;" class="title"><strong>C E R T I F I C A T I O N</strong></p></center>
+       <p style="text-align:center;font-size:22px;" class="title"><strong>C E R T I F I C A T I O N</strong></p>
       <p><strong>TO WHOM IT MAY CONCERN:</strong></p>
       <p>
         This is to certify that <strong>(FULL NAME)</strong>, is presently employed in this office as
